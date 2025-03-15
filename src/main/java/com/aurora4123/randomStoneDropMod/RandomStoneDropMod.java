@@ -2,7 +2,6 @@ package com.aurora4123.randomStoneDropMod;
 
 import com.aurora4123.randomStoneDropMod.blocks.ModBlocks;
 import com.aurora4123.randomStoneDropMod.items.ModItems;
-import com.aurora4123.randomStoneDropMod.tags.ModTags;
 import net.minecraft.tags.BlockTags;
 
 import net.minecraft.world.entity.item.ItemEntity;
@@ -10,6 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -36,10 +36,10 @@ public class RandomStoneDropMod
    public RandomStoneDropMod(){
        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
        ModBlocks.BLOCKS.register(bus);
-       ModItems.ITEMS.register(bus);
+       ModItems.register(bus);
 
        MinecraftForge.EVENT_BUS.addListener(this::onBlockBreak);
-
+       bus.addListener(this::addCreative);
    }
    private void onBlockBreak(BlockEvent.BreakEvent event){
        Player player = event.getPlayer();
@@ -58,6 +58,16 @@ public class RandomStoneDropMod
                                new ItemStack(drop)
                        ));
            }
+       }
+   }
+
+   private void addCreative(BuildCreativeModeTabContentsEvent event){
+       if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+           event.accept(ModItems.TEST);
+
+       }
+       if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+
        }
    }
 }

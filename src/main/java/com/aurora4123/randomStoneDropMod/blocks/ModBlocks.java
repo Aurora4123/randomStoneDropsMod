@@ -11,6 +11,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RandomStoneDropMod.MODID);
-    public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
 }
