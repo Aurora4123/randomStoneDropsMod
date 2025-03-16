@@ -12,8 +12,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test_item",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> THE_BI_STINKY = ITEMS.register("excrement",
-            Poisonous::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
