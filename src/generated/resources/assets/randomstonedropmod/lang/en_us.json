@@ -1,4 +1,6 @@
 {
-    "item.randomstonedropmod.test_item": "test"
 
+    "item.randomstonedropmod.test_item": "test",
+    "item.randomstonedropmod.excrement": "s**t",
+    "tooltip.randomstonedropmod.excrement.desc": "Stop kidding! It's DISGUSTING!!!"
 }

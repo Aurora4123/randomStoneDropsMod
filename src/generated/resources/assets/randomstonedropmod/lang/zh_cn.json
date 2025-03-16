@@ -1,3 +1,5 @@
 {
-    "item.randomstonedropmod.test_item" : "TEST"
+    "item.randomstonedropmod.test_item" : "TEST",
+    "item.randomstonedropmod.excrement": "B之灯",
+    "tooltip.randomstonedropmod.excrement.desc": "开什么玩笑，要吐了"
 }

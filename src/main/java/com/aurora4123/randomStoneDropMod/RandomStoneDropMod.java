@@ -64,10 +64,9 @@ public class RandomStoneDropMod
    private void addCreative(BuildCreativeModeTabContentsEvent event){
        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
            event.accept(ModItems.TEST);
-
        }
-       if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-
+       if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+           event.accept(ModItems.THE_BI_STINKY);
        }
    }
 }
