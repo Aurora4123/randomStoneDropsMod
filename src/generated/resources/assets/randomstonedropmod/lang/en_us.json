@@ -1,4 +1,6 @@
 {
 
-    "item.randomstonedropmod.test_item": "test"
+    "item.randomstonedropmod.test_item": "test",
+    "item.randomstonedropmod.way_stone": "Way stone",
+    "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items"
 }

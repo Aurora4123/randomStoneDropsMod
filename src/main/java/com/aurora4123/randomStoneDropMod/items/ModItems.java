@@ -12,8 +12,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test_item",
             () -> new Item(new Item.Properties()));
-
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+    public static final RegistryObject<Item> WAY_STONE = ITEMS.register("way_stone",
+            () -> new Item(new Item.Properties()));
 }

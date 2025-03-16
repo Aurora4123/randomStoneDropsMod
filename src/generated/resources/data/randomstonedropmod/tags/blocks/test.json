@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "randomstonedropmod:test_block",
-    "randomstonedropmod:test_item",
-    "randomstonedropmod:excrement"
+    "randomstonedropmod:test_item"
   ]
 }

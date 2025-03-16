@@ -1,3 +1,5 @@
 {
-    "item.randomstonedropmod.test_item" : "TEST"
+    "item.randomstonedropmod.test_item" : "TEST",
+    "item.randomstonedropmod.way_stone": "指路石",
+    "creativetab.randomstonedropmod_tab": "随机矿物掉落-物品"
 }
