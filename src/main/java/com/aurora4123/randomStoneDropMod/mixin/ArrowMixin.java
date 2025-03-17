@@ -1,7 +1,9 @@
 package com.aurora4123.randomStoneDropMod.mixin;
 
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
@@ -21,12 +23,15 @@ public abstract class ArrowMixin {
         Level level = arrow.level();
 
         if(!level.isClientSide()) {
+            Entity owner = arrow.getOwner();
+            if(owner instanceof Player){
+                Vec3 hitPos = pResult.getLocation();
+                LightningBolt bolt = new LightningBolt(EntityType.LIGHTNING_BOLT, level);
+                bolt.moveTo(hitPos.x, hitPos.y, hitPos.z);
+                bolt.setVisualOnly(false);
+                level.addFreshEntity(bolt);
+            }
 
-            Vec3 hitPos = pResult.getLocation();
-            LightningBolt bolt = new LightningBolt(EntityType.LIGHTNING_BOLT, level);
-            bolt.moveTo(hitPos.x, hitPos.y, hitPos.z);
-            bolt.setVisualOnly(false);
-            level.addFreshEntity(bolt);
         }
     }
 
