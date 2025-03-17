@@ -1,6 +1,8 @@
 {
 
-    "item.randomstonedropmod.test_item": "test",
     "item.randomstonedropmod.way_stone": "Way stone",
-    "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items"
+    "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
+    "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
+    "block.randomstonedropmod.test_block": "Test Block",
+    "block.randomstonedropmod.andesite_waystone": "Andesite WayStone"
 }

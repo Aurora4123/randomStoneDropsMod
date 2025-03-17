@@ -1,6 +1,6 @@
 package com.aurora4123.randomStoneDropMod;
 
-import com.aurora4123.randomStoneDropMod.blocks.ModBlocks;
+import com.aurora4123.randomStoneDropMod.blocks.ModBlocksToRegister;
 import com.aurora4123.randomStoneDropMod.items.ModItems;
 
 
@@ -17,7 +17,7 @@ public class RandomStoneDropMod
     public RandomStoneDropMod(FMLJavaModLoadingContext context){
         IEventBus bus = context.getModEventBus();
         ModCreativeModTabs.register(bus);
-        ModBlocks.BLOCKS.register(bus);
+        ModBlocksToRegister.register(bus);
         ModItems.ITEMS.register(bus);
 
     }

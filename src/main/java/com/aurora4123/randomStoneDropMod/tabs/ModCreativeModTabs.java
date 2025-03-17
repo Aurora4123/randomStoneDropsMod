@@ -1,6 +1,7 @@
 package com.aurora4123.randomStoneDropMod.tabs;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
+import com.aurora4123.randomStoneDropMod.blocks.ModBlocksToRegister;
 import com.aurora4123.randomStoneDropMod.items.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -14,12 +15,21 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> MOD_TAB_CREATIVE_MODE =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RandomStoneDropMod.MODID);
 
-    public static final RegistryObject<CreativeModeTab> MY_MOD_TAB = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_tab",
+    public static final RegistryObject<CreativeModeTab> MY_MOD_TAB_ITEMS = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WAY_STONE.get()))
                     .title(Component.translatable("creativetab.randomstonedropmod_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.WAY_STONE.get());
-                        output.accept(ModItems.TEST.get());
+
+                    }))
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> MY_MOD_TAB_BLOCKS = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocksToRegister.ANDESIDE_WAYSTONE.get()))
+                    .title(Component.translatable("creativetab.randomstonedropmod_blocks_tab"))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocksToRegister.TEST_BLOCK.get());
+                        output.accept(ModBlocksToRegister.ANDESIDE_WAYSTONE.get());
                     }))
                     .build());
 

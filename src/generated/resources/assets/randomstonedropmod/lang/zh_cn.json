@@ -1,5 +1,7 @@
 {
-    "item.randomstonedropmod.test_item" : "TEST",
     "item.randomstonedropmod.way_stone": "指路石",
-    "creativetab.randomstonedropmod_tab": "随机矿物掉落-物品"
+    "creativetab.randomstonedropmod_tab": "随机矿物掉落-物品",
+    "creativetab.randomstonedropmod_blocks_tab": "随机掉落-方块",
+    "block.randomstonedropmod.test_block": "测试",
+    "block.randomstonedropmod.andesite_waystone": "安山岩指路石方块"
 }
