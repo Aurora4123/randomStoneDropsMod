@@ -16,8 +16,8 @@ public class RandomStoneDropMod
     public static final String MODID = "randomstonedropmod";
     public RandomStoneDropMod(FMLJavaModLoadingContext context){
         IEventBus bus = context.getModEventBus();
-        ModCreativeModTabs.register(bus);
         ModBlocksToRegister.register(bus);
+        ModCreativeModTabs.register(bus);
         ModItems.ITEMS.register(bus);
 
     }

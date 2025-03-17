@@ -18,6 +18,9 @@ public class CreativeModTabHandler {
             event.accept(ModBlocksToRegister.ANDESIDE_WAYSTONE);
         } else if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocksToRegister.TEST_BLOCK);
+        } else if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.DIAMOND_LONG_SWORD);
+            event.accept(ModItems.IRON_LONG_SWORD);
         }
     }
 }

@@ -20,7 +20,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.randomstonedropmod_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.WAY_STONE.get());
-
+                        output.accept(ModItems.DIAMOND_LONG_SWORD.get());
+                        output.accept(ModItems.IRON_LONG_SWORD.get());
                     }))
                     .build());
 

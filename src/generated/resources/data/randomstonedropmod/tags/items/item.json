@@ -1,5 +1,7 @@
 {
   "values": [
-    "randomstonedropmod:way_stone"
+    "randomstonedropmod:way_stone",
+    "randomstonedropmod:diamond_long_sword",
+    "randomstonedropmod:iron_long_sword"
   ]
 }

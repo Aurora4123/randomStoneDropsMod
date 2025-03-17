@@ -1,5 +1,7 @@
 {
     "item.randomstonedropmod.way_stone": "指路石",
+    "item.randomstonedropmod.diamond_long_sword": "钻石太刀",
+    "item.randomstonedropmod.iron_long_sword": "铁太刀",
     "creativetab.randomstonedropmod_tab": "随机矿物掉落-物品",
     "creativetab.randomstonedropmod_blocks_tab": "随机掉落-方块",
     "block.randomstonedropmod.test_block": "测试",
