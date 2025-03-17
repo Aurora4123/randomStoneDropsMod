@@ -14,8 +14,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class RandomStoneDropMod
 {
     public static final String MODID = "randomstonedropmod";
-    public RandomStoneDropMod(){
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    public RandomStoneDropMod(FMLJavaModLoadingContext context){
+        IEventBus bus = context.getModEventBus();
         ModCreativeModTabs.register(bus);
         ModBlocks.BLOCKS.register(bus);
         ModItems.ITEMS.register(bus);
