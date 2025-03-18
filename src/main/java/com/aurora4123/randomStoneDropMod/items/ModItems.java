@@ -27,4 +27,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> STONE_LONG_SWORD = ITEMS.register("stone_long_sword",
             () -> new SwordItem(Tiers.STONE, 5, -2.0F, new Item.Properties().durability(Tiers.STONE.getUses())));
-}
+
+    public static final RegistryObject<Item> WOODEN_LONG_SWORD = ITEMS.register("wooden_long_sword",
+            () -> new SwordItem(Tiers.WOOD, 4, -2.0F, new Item.Properties().durability(Tiers.WOOD.getUses())));
+
+    public static final RegistryObject<Item> GOLDEN_LONG_SWORD = ITEMS.register("golden_long_sword",
+            () -> new SwordItem(Tiers.GOLD, 4, -2.0F, new Item.Properties().durability(Tiers.GOLD.getUses())));
+ }

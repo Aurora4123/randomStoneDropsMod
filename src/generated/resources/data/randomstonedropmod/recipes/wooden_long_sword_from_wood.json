@@ -8,14 +8,14 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:planks"
     },
     "B": {
-      "item": "minecraft:stone_sword"
+      "item": "minecraft:wooden_sword"
     }
   },
   "result": {
-    "item": "randomstonedropmod:stone_long_sword"
+    "item": "randomstonedropmod:wooden_long_sword"
   },
   "show_notification": true
 }

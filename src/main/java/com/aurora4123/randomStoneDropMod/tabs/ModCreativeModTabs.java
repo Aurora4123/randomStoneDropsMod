@@ -24,17 +24,31 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DIAMOND_LONG_SWORD.get());
                         output.accept(ModItems.IRON_LONG_SWORD.get());
                         output.accept(ModItems.STONE_LONG_SWORD.get());
+                        output.accept(ModItems.WOODEN_LONG_SWORD.get());
+                        output.accept(ModItems.GOLDEN_LONG_SWORD.get());
                     }))
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MY_MOD_TAB_BLOCKS = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocksToRegister.ANDESIDE_WAYSTONE.get()))
                     .title(Component.translatable("creativetab.randomstonedropmod_blocks_tab"))
-                    .displayItems(((itemDisplayParameters, output) -> {
+                    .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocksToRegister.TEST_BLOCK.get());
                         output.accept(ModBlocksToRegister.ANDESIDE_WAYSTONE.get());
-                    }))
+                    })
                     .build());
+
+    public static final RegistryObject<CreativeModeTab> MY_MOD_TAB_COMBAT = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_combat_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.IRON_LONG_SWORD.get()))
+                    .title(Component.translatable("creativetab.randomstonedropmod_combat_tab"))
+                    .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(ModItems.WOODEN_LONG_SWORD.get());
+                        output.accept(ModItems.STONE_LONG_SWORD.get());
+                        output.accept(ModItems.GOLDEN_LONG_SWORD.get());
+                        output.accept(ModItems.IRON_LONG_SWORD.get());
+                        output.accept(ModItems.DIAMOND_LONG_SWORD.get());
+                        output.accept(ModItems.NETHERITE_LONG_SWORD.get());
+                    }).build());
 
     public static void register(IEventBus modEventBus) {
         MOD_TAB_CREATIVE_MODE.register(modEventBus);

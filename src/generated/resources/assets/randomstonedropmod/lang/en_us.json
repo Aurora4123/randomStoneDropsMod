@@ -5,8 +5,11 @@
     "item.randomstonedropmod.diamond_long_sword": "Diamond long sword",
     "item.randomstonedropmod.iron_long_sword": "Iron long sword",
     "item.randomstonedropmod.stone_long_sword": "Stone long sword",
+    "item.randomstonedropmod.wooden_long_sword": "Wooden Long Sword",
+    "item.randomstonedropmod.golden_long_sword": "Golden Long Sword",
     "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
     "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
+    "creativetab.randomstonedropmod_combat_tab": "randomStoneDrops-COMBAT",
     "block.randomstonedropmod.test_block": "Test Block",
     "block.randomstonedropmod.andesite_waystone": "Andesite WayStone"
 }

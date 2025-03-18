@@ -8,14 +8,14 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:cobblestone"
+      "item": "gold_ingot"
     },
     "B": {
-      "item": "minecraft:stone_sword"
+      "item": "minecraft:golden_sword"
     }
   },
   "result": {
-    "item": "randomstonedropmod:stone_long_sword"
+    "item": "randomstonedropmod:golden_long_sword"
   },
   "show_notification": true
 }
