@@ -1,8 +1,10 @@
 {
 
     "item.randomstonedropmod.way_stone": "Way stone",
+    "item.randomstonedropmod.netherite_long_sword": "Netherite Long Sword",
     "item.randomstonedropmod.diamond_long_sword": "Diamond long sword",
     "item.randomstonedropmod.iron_long_sword": "Iron long sword",
+    "item.randomstonedropmod.stone_long_sword": "Stone long sword",
     "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
     "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
     "block.randomstonedropmod.test_block": "Test Block",

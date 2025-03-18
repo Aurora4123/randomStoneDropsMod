@@ -1,7 +1,10 @@
 {
+  "replace": false,
   "values": [
     "randomstonedropmod:way_stone",
+    "randomstonedropmod:netherite_long_sword",
     "randomstonedropmod:diamond_long_sword",
-    "randomstonedropmod:iron_long_sword"
+    "randomstonedropmod:iron_long_sword",
+    "randomstonedropmod:stone_long_sword"
   ]
 }
