@@ -7,3 +7,6 @@ Faithful 32x Daggers - Minecraft Resource Pack : https://modrinth.com/resourcepa
 -------------------------------------------------------------
 This is my first mod project for mod developing study, sorry for any shortcomings _(:зゝ∠)_
 Pull requests and issues are welcome!
+-------------------------------------------------------------
+ATTENTION:
+This project is licensed under the MIT License. See LICENSE.txt for details.
