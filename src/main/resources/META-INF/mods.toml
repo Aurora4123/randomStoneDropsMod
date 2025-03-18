@@ -17,7 +17,14 @@ displayName="RandomStoneDropMod" #mandatory
 authors="aurora4123" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''A mod make stone random drops'''
+description='''A mod make stone random drops with some common items added
+refrenced texture and model resources(Updating irregularly):
+Modern Waystones Textures - Minecraft Resource Pack : https://modrinth.com/resourcepack/modern-waystones-textures
+Waystones Resprite - Minecraft Resource Pack: https://modrinth.com/resourcepack/waystones-resprite
+Faithful 32x Daggers - Minecraft Resource Pack : https://modrinth.com/resourcepack/faithful-32x-daggers
+'''
+displayURL = "https://github.com/Aurora4123/randomStoneDropsMod"
+issueTrackerURL="https://github.com/Aurora4123/randomStoneDropsMod/issues"
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.randomstonedropmod]] #optional
     # the modid of the dependency
