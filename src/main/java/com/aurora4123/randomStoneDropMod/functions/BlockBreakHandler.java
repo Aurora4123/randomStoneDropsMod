@@ -31,7 +31,7 @@ public class BlockBreakHandler {
         Player player = event.getPlayer();
         BlockState state = event.getState();
 
-        if(!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES) && !player.isCreative()){
+        if(!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES) && !player.isCreative()) {
 
             if(player.level().getRandom().nextDouble() < DROP_CHANCE){
                 Item drop = DROPS.get(player.level().random.nextInt(DROPS.size()));

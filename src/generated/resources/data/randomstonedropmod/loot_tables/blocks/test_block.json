@@ -5,10 +5,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "tag": "minecraft:iron_tools"
-          }
+          "condition": "minecraft:survives_explosion"
         }
       ],
       "entries": [
@@ -19,5 +16,6 @@
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "randomstonedropmod:blocks/test_block"
 }

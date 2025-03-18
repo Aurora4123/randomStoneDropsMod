@@ -1,4 +1,4 @@
-package com.aurora4123.randomStoneDropMod.functions;
+package com.aurora4123.randomStoneDropMod.tabs;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
 import com.aurora4123.randomStoneDropMod.blocks.ModBlocksToRegister;
