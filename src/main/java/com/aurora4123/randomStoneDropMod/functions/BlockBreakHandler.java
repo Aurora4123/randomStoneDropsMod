@@ -15,16 +15,24 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.List;
 @Mod.EventBusSubscriber(modid = RandomStoneDropMod.MODID,bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class BlockBreakHandler {
-    private static final double DROP_CHANCE = 0.1;
-    private static final List<Item> DROPS = List.of(
+    private static final double DROP_CHANCE = 0.003;
+    private static final double RARE_CHANCE = 0.007;
+    private static final double MOST_CHANCE = 0.9;
+    private static final double COMMON_DROP_CHANCE = 0.09;
+    private static final Item MOST_DROP = Items.COBBLESTONE;
+    private static final List<Item> COMMON_DROPS = List.of(
             Items.COAL,
             Items.RAW_IRON,
             Items.RAW_COPPER,
-            Items.RAW_GOLD,
-            Items.DIAMOND,
-            Items.EMERALD,
             Items.LAPIS_LAZULI,
             Items.REDSTONE
+    );
+    private static final List<Item> RARE_DROPS = List.of(
+            Items.RAW_GOLD,
+            Items.EMERALD
+    );
+    private static final List<Item> DROPS = List.of(
+            Items.DIAMOND
     );
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event){
@@ -32,18 +40,36 @@ public class BlockBreakHandler {
         BlockState state = event.getState();
 
         if(!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES) && !player.isCreative()) {
-
+            event.setCanceled(true);
+            player.level().destroyBlock(event.getPos(), false, player);
             if(player.level().getRandom().nextDouble() < DROP_CHANCE){
                 Item drop = DROPS.get(player.level().random.nextInt(DROPS.size()));
-                player.level().addFreshEntity(
-                        new ItemEntity(
-                                player.level(),
-                                event.getPos().getX() + 0.5,
-                                event.getPos().getY() + 0.5,
-                                event.getPos().getZ() + 0.5,
-                                new ItemStack(drop)
-                        ));
+                setDrops(event, player, drop);
+            } else if(player.level().getRandom().nextDouble() < RARE_CHANCE){
+                Item drop = RARE_DROPS.get(player.level().random.nextInt(RARE_DROPS.size()));
+                setDrops(event, player, drop);
+            } else if(player.level().getRandom().nextDouble() < COMMON_DROP_CHANCE){
+                Item drop = COMMON_DROPS.get(player.level().random.nextInt(COMMON_DROPS.size()));
+                setDrops(event, player, drop);
+            } else if(player.level().getRandom().nextDouble() < MOST_CHANCE){
+                setDrops(event, player, MOST_DROP);
+            } else {
+                setDrops(event, player, MOST_DROP);
             }
         }
+
+    }
+
+    private static void setDrops(BlockEvent.BreakEvent event,Player player,Item drop){
+        player.level().addFreshEntity(
+                new ItemEntity(
+                        player.level(),
+                        event.getPos().getX() + 0.5,
+                        event.getPos().getY() + 0.5,
+                        event.getPos().getZ() + 0.5,
+                        new ItemStack(drop)
+
+                )
+        );
     }
 }

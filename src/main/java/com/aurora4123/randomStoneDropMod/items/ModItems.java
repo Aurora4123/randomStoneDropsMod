@@ -2,7 +2,6 @@ package com.aurora4123.randomStoneDropMod.items;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.DeferredRegister;
