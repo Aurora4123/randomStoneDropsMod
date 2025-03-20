@@ -6,9 +6,11 @@
     "item.randomstonedropmod.stone_long_sword": "石长剑",
     "item.randomstonedropmod.wooden_long_sword": "木长剑",
     "item.randomstonedropmod.golden_long_sword": "金长剑",
-    "creativetab.randomstonedropmod_tab": "随机矿物掉落-物品",
-    "creativetab.randomstonedropmod_blocks_tab": "随机掉落-方块",
-    "creativetab.randomstonedropmod_combat_tab": "石头的随机掉落-战斗用品",
+    "creativetab.randomstonedropmod_tab": "石头的矿物随机掉落-物品",
+    "creativetab.randomstonedropmod_blocks_tab": "石头的矿物随机掉落-方块",
+    "creativetab.randomstonedropmod_combat_tab": "石头的矿物随机掉落-战斗用品",
+    "creativetab.main_mod_tab": "石头的矿物随机掉落",
     "block.randomstonedropmod.test_block": "测试用方块（无其他用途）",
-    "block.randomstonedropmod.andesite_waystone": "安山岩指路石方块"
+    "block.randomstonedropmod.andesite_waystone": "安山岩指路石方块",
+    "item.randomstonedropmod.spawnpoint_setter": "重生点设置器"
 }

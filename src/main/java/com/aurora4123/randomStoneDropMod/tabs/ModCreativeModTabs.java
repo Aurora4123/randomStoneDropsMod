@@ -15,11 +15,30 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> MOD_TAB_CREATIVE_MODE =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RandomStoneDropMod.MODID);
 
+    public static final RegistryObject<CreativeModeTab> MAIN_MOD_TAB = MOD_TAB_CREATIVE_MODE.register("main_mod_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SPAWNPOINT_SETTER.get()))
+                    .title(Component.translatable("creativetab.main_mod_tab"))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.WAY_STONE.get());
+                        output.accept(ModItems.SPAWNPOINT_SETTER.get());
+                        output.accept(ModBlocksToRegister.ANDESIDE_WAYSTONE.get());
+                        output.accept(ModBlocksToRegister.TEST_BLOCK.get());
+                        output.accept(ModItems.NETHERITE_LONG_SWORD.get());
+                        output.accept(ModItems.DIAMOND_LONG_SWORD.get());
+                        output.accept(ModItems.IRON_LONG_SWORD.get());
+                        output.accept(ModItems.STONE_LONG_SWORD.get());
+                        output.accept(ModItems.WOODEN_LONG_SWORD.get());
+                        output.accept(ModItems.GOLDEN_LONG_SWORD.get());
+                    }))
+                    .build());
+
+
     public static final RegistryObject<CreativeModeTab> MY_MOD_TAB_ITEMS = MOD_TAB_CREATIVE_MODE.register("randomstonedropmod_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WAY_STONE.get()))
                     .title(Component.translatable("creativetab.randomstonedropmod_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.WAY_STONE.get());
+                        output.accept(ModItems.SPAWNPOINT_SETTER.get());
                         output.accept(ModItems.NETHERITE_LONG_SWORD.get());
                         output.accept(ModItems.DIAMOND_LONG_SWORD.get());
                         output.accept(ModItems.IRON_LONG_SWORD.get());
