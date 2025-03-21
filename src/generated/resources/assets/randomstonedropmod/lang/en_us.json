@@ -8,10 +8,12 @@
     "item.randomstonedropmod.wooden_long_sword": "Wooden Long Sword",
     "item.randomstonedropmod.golden_long_sword": "Golden Long Sword",
     "item.randomstonedropmod.spawnpoint_setter": "Spawnpoint Setter",
+    "item.randomstonedropmod.fire_wand": "Fire Wand",
     "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
     "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
     "creativetab.randomstonedropmod_combat_tab": "randomStoneDrops-COMBAT",
     "creativetab.main_mod_tab": "random Stone Drops",
     "block.randomstonedropmod.test_block": "Test Block",
-    "block.randomstonedropmod.andesite_waystone": "Andesite WayStone"
+    "block.randomstonedropmod.andesite_waystone": "Andesite WayStone",
+    "tooltip.spawnpoint_setter": "Click the ground to set the SpawnPoint"
 }

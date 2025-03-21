@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "randomstonedropmod:spawnpoint_setter"
+    "randomstonedropmod:spawnpoint_setter",
+    "randomstonedropmod:fire_wand"
   ]
 }

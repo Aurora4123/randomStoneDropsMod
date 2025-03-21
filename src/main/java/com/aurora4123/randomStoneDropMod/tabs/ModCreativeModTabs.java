@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SPAWNPOINT_SETTER.get());
                         output.accept(ModBlocksToRegister.ANDESIDE_WAYSTONE.get());
                         output.accept(ModBlocksToRegister.TEST_BLOCK.get());
+                        output.accept(ModItems.FIRE_WAND.get());
                         output.accept(ModItems.NETHERITE_LONG_SWORD.get());
                         output.accept(ModItems.DIAMOND_LONG_SWORD.get());
                         output.accept(ModItems.IRON_LONG_SWORD.get());
@@ -67,6 +68,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.IRON_LONG_SWORD.get());
                         output.accept(ModItems.DIAMOND_LONG_SWORD.get());
                         output.accept(ModItems.NETHERITE_LONG_SWORD.get());
+                        output.accept(ModItems.FIRE_WAND.get());
                     }).build());
 
     public static void register(IEventBus modEventBus) {

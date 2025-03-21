@@ -32,7 +32,7 @@ public abstract class ArrowMixin {
     private void randomStoneDropMod$summonLightningBolt(Vec3 hitPos){
         AbstractArrow arrow = (AbstractArrow) (Object) this;
         Level level = arrow.level();
-        if(!level.isClientSide()) {
+        if(!level.isClientSide() && level.dimension() == Level.OVERWORLD) {
             Entity owner = arrow.getOwner();
             if(owner instanceof Player){
                 LightningBolt bolt = new LightningBolt(EntityType.LIGHTNING_BOLT, level);

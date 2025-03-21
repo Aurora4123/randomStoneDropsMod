@@ -12,9 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 public class ToolTipHandler {
     @SubscribeEvent
     public static void onItemToolTip(ItemTooltipEvent event) {
-//        if(event.getItemStack().getItem() == ModItems.THE_BI_STINKY.get()) {
-//            event.getToolTip().add(Component.translatable("tooltip.randomstonedropmod.excrement.desc").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
-//            event.getToolTip().add(Component.literal(RandomStoneDropMod.MODID).withStyle(ChatFormatting.DARK_BLUE,ChatFormatting.ITALIC));
-//        }
+        if(event.getItemStack().getItem() == ModItems.SPAWNPOINT_SETTER.get()){
+            event.getToolTip().add(Component.translatable("tooltip.spawnpoint_setter").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.literal(RandomStoneDropMod.MODID).withStyle(ChatFormatting.BLUE, ChatFormatting.ITALIC));
+        }
     }
 }

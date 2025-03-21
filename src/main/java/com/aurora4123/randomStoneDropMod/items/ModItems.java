@@ -1,6 +1,7 @@
 package com.aurora4123.randomStoneDropMod.items;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
+import com.aurora4123.randomStoneDropMod.items.combatItems.FireWandItem;
 import com.aurora4123.randomStoneDropMod.items.functional.SetSpawnItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
@@ -33,6 +34,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> GOLDEN_LONG_SWORD = ITEMS.register("golden_long_sword",
             () -> new SwordItem(Tiers.GOLD, 4, -2.0F, new Item.Properties().durability(Tiers.GOLD.getUses())));
+
+    public static final RegistryObject<Item> FIRE_WAND = ITEMS.register("fire_wand",
+            () -> new FireWandItem(new Item.Properties()));
 
 //----------functional items----------
     public static final RegistryObject<Item> SPAWNPOINT_SETTER = ITEMS.register("spawnpoint_setter",
