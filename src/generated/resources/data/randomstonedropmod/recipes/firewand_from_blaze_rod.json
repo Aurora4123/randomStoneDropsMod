@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "BFB",
+    "RSR",
+    " S "
+  ],
+  "key": {
+    "R": {
+      "tag": "minecraft:small_flowers"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "randomstonedropmod:fire_wand"
+  },
+  "show_notification": true
+}

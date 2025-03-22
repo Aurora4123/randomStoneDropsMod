@@ -19,7 +19,7 @@ public class FireWandItem extends Item {
     public static final double PARTICLE_RANGE = 1.0;
 
     public FireWandItem(Properties pProperties) {
-        super(pProperties.stacksTo(1).durability(400));
+        super(pProperties.stacksTo(1).durability(250));
     }
 
     @Override
