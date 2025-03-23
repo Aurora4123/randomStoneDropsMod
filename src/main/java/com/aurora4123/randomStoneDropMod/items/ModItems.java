@@ -1,7 +1,9 @@
 package com.aurora4123.randomStoneDropMod.items;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
+import com.aurora4123.randomStoneDropMod.Tiers.ScytheTiers;
 import com.aurora4123.randomStoneDropMod.items.combatItems.FireWandItem;
+import com.aurora4123.randomStoneDropMod.items.combatItems.ScytheItem;
 import com.aurora4123.randomStoneDropMod.items.functional.SetSpawnItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
@@ -37,6 +39,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> FIRE_WAND = ITEMS.register("fire_wand",
             () -> new FireWandItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> COOPER_SCYTHE = ITEMS.register("copper_scythe",
+            () -> new ScytheItem(ScytheTiers.COPPER,4, -1.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> IRON_SCYTHE = ITEMS.register("iron_scythe",
+            () -> new ScytheItem(ScytheTiers.IRON,6, -1.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLD_SCYTHE = ITEMS.register("gold_scythe",
+            () -> new ScytheItem(ScytheTiers.GOLD,5, -1.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> DIAMOND_SCYTHE = ITEMS.register("diamond_scythe",
+            () -> new ScytheItem(ScytheTiers.DIAMOND,6, -1.5f, new Item.Properties()));
 
 //----------functional items----------
     public static final RegistryObject<Item> SPAWNPOINT_SETTER = ITEMS.register("spawnpoint_setter",

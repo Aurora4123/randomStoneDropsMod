@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "randomstonedropmod:cooper_scythe",
+    "randomstonedropmod:iron_scythe",
+    "randomstonedropmod:gold_scythe",
+    "randomstonedropmod:diamond_scythe"
+  ]
+}

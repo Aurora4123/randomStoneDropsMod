@@ -15,5 +15,9 @@
     "block.randomstonedropmod.andesite_waystone": "安山岩指路石方块",
     "item.randomstonedropmod.spawnpoint_setter": "重生点设置器",
     "tooltip.spawnpoint_setter" : "点击地板以设置重生点，点击方块侧面可能会无效",
-    "tooltip.fire_wand": "请勿在木屋中使用，除非你知道自己在做什么"
+    "tooltip.fire_wand": "请勿在木屋中使用，除非你知道自己在做什么",
+    "item.randomstonedropmod.cooper_scythe": "铜镰刀",
+    "item.randomstonedropmod.iron_scythe": "铁镰刀",
+    "item.randomstonedropmod.gold_scythe": "金镰刀",
+    "item.randomstonedropmod.diamond_scythe": "钻石镰刀"
 }

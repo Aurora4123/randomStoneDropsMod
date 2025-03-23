@@ -30,6 +30,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.STONE_LONG_SWORD.get());
                         output.accept(ModItems.WOODEN_LONG_SWORD.get());
                         output.accept(ModItems.GOLDEN_LONG_SWORD.get());
+
+                        output.accept(ModItems.DIAMOND_SCYTHE.get());
+                        output.accept(ModItems.IRON_SCYTHE.get());
+                        output.accept(ModItems.GOLD_SCYTHE.get());
+                        output.accept(ModItems.COOPER_SCYTHE.get());
                     }))
                     .build());
 
@@ -68,6 +73,12 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.IRON_LONG_SWORD.get());
                         output.accept(ModItems.DIAMOND_LONG_SWORD.get());
                         output.accept(ModItems.NETHERITE_LONG_SWORD.get());
+
+                        output.accept(ModItems.DIAMOND_SCYTHE.get());
+                        output.accept(ModItems.IRON_SCYTHE.get());
+                        output.accept(ModItems.GOLD_SCYTHE.get());
+                        output.accept(ModItems.COOPER_SCYTHE.get());
+
                         output.accept(ModItems.FIRE_WAND.get());
                     }).build());
 
