@@ -10,11 +10,16 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = RandomStoneDropMod.MODID,bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ToolTipHandler {
+    public static final Component TOOLTIP_ID = Component.literal(RandomStoneDropMod.MODID).withStyle(ChatFormatting.BLUE, ChatFormatting.ITALIC);
     @SubscribeEvent
     public static void onItemToolTip(ItemTooltipEvent event) {
         if(event.getItemStack().getItem() == ModItems.SPAWNPOINT_SETTER.get()){
             event.getToolTip().add(Component.translatable("tooltip.spawnpoint_setter").withStyle(ChatFormatting.GRAY));
-            event.getToolTip().add(Component.literal(RandomStoneDropMod.MODID).withStyle(ChatFormatting.BLUE, ChatFormatting.ITALIC));
+            event.getToolTip().add(TOOLTIP_ID);
+        }
+        if(event.getItemStack().getItem() == ModItems.FIRE_WAND.get()){
+            event.getToolTip().add(Component.translatable("tooltip.fire_wand").withStyle(ChatFormatting.RED, ChatFormatting.ITALIC));
+            event.getToolTip().add(TOOLTIP_ID);
         }
     }
 }

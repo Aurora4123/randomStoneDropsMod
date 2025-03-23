@@ -15,5 +15,6 @@
     "creativetab.main_mod_tab": "random Stone Drops",
     "block.randomstonedropmod.test_block": "Test Block",
     "block.randomstonedropmod.andesite_waystone": "Andesite WayStone",
-    "tooltip.spawnpoint_setter": "Click the ground to set the SpawnPoint"
+    "tooltip.spawnpoint_setter": "Click the ground to set the SpawnPoint",
+    "tooltip.fire_wand": "DO NOT USE in your wooden house unless you're clear about what R U DOING"
 }
