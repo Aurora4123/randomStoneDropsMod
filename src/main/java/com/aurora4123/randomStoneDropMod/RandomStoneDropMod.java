@@ -6,7 +6,9 @@ import com.aurora4123.randomStoneDropMod.items.ModItems;
 
 import com.aurora4123.randomStoneDropMod.tabs.ModCreativeModTabs;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -16,10 +18,14 @@ public class RandomStoneDropMod
     public static final String MODID = "randomstonedropmod";
     public RandomStoneDropMod(FMLJavaModLoadingContext context){
         IEventBus bus = context.getModEventBus();
+        ModLoadingContext.get().registerConfig(
+                ModConfig.Type.COMMON,
+                com.aurora4123.randomStoneDropMod.ModConfig.SPEC,
+                "randomStoneDropMod.toml"
+        );
         ModBlocksToRegister.register(bus);
         ModCreativeModTabs.register(bus);
         ModItems.ITEMS.register(bus);
 
     }
-
 }

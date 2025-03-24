@@ -1,5 +1,6 @@
 package com.aurora4123.randomStoneDropMod.functions;
 
+import com.aurora4123.randomStoneDropMod.ModConfig;
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -36,25 +37,27 @@ public class BlockBreakHandler {
     );
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event){
-        Player player = event.getPlayer();
-        BlockState state = event.getState();
+        if(ModConfig.randomStoneDropEnabled){
+            Player player = event.getPlayer();
+            BlockState state = event.getState();
 
-        if(!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES) && !player.isCreative()) {
-            event.setCanceled(true);
-            player.level().destroyBlock(event.getPos(), false, player);
-            if(player.level().getRandom().nextDouble() < DROP_CHANCE){
-                Item drop = DROPS.get(player.level().random.nextInt(DROPS.size()));
-                setDrops(event, player, drop);
-            } else if(player.level().getRandom().nextDouble() < RARE_CHANCE){
-                Item drop = RARE_DROPS.get(player.level().random.nextInt(RARE_DROPS.size()));
-                setDrops(event, player, drop);
-            } else if(player.level().getRandom().nextDouble() < COMMON_DROP_CHANCE){
-                Item drop = COMMON_DROPS.get(player.level().random.nextInt(COMMON_DROPS.size()));
-                setDrops(event, player, drop);
-            } else if(player.level().getRandom().nextDouble() < MOST_CHANCE){
-                setDrops(event, player, MOST_DROP);
-            } else {
-                setDrops(event, player, MOST_DROP);
+            if (!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES) && !player.isCreative()) {
+                event.setCanceled(true);
+                player.level().destroyBlock(event.getPos(), false, player);
+                if (player.level().getRandom().nextDouble() < DROP_CHANCE) {
+                    Item drop = DROPS.get(player.level().random.nextInt(DROPS.size()));
+                    setDrops(event, player, drop);
+                } else if (player.level().getRandom().nextDouble() < RARE_CHANCE) {
+                    Item drop = RARE_DROPS.get(player.level().random.nextInt(RARE_DROPS.size()));
+                    setDrops(event, player, drop);
+                } else if (player.level().getRandom().nextDouble() < COMMON_DROP_CHANCE) {
+                    Item drop = COMMON_DROPS.get(player.level().random.nextInt(COMMON_DROPS.size()));
+                    setDrops(event, player, drop);
+                } else if (player.level().getRandom().nextDouble() < MOST_CHANCE) {
+                    setDrops(event, player, MOST_DROP);
+                } else {
+                    setDrops(event, player, MOST_DROP);
+                }
             }
         }
 

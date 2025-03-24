@@ -1,5 +1,6 @@
 package com.aurora4123.randomStoneDropMod.mixin;
 
+import com.aurora4123.randomStoneDropMod.ModConfig;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
@@ -30,15 +31,17 @@ public abstract class ArrowMixin {
 
     @Unique
     private void randomStoneDropMod$summonLightningBolt(Vec3 hitPos){
-        AbstractArrow arrow = (AbstractArrow) (Object) this;
-        Level level = arrow.level();
-        if(!level.isClientSide() && level.dimension() == Level.OVERWORLD) {
-            Entity owner = arrow.getOwner();
-            if(owner instanceof Player){
-                LightningBolt bolt = new LightningBolt(EntityType.LIGHTNING_BOLT, level);
-                bolt.moveTo(hitPos.x, hitPos.y, hitPos.z);
-                bolt.setVisualOnly(false);
-                level.addFreshEntity(bolt);
+        if(ModConfig.lightingEnabled){
+            AbstractArrow arrow = (AbstractArrow) (Object) this;
+            Level level = arrow.level();
+            if (!level.isClientSide() && level.dimension() == Level.OVERWORLD) {
+                Entity owner = arrow.getOwner();
+                if (owner instanceof Player) {
+                    LightningBolt bolt = new LightningBolt(EntityType.LIGHTNING_BOLT, level);
+                    bolt.moveTo(hitPos.x, hitPos.y, hitPos.z);
+                    bolt.setVisualOnly(false);
+                    level.addFreshEntity(bolt);
+                }
             }
         }
     }
