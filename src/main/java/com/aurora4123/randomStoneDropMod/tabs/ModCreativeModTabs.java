@@ -35,6 +35,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.IRON_SCYTHE.get());
                         output.accept(ModItems.GOLD_SCYTHE.get());
                         output.accept(ModItems.COOPER_SCYTHE.get());
+
+                        output.accept(ModItems.BATTLE_HAMMER.get());
                     }))
                     .build());
 
@@ -80,6 +82,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.COOPER_SCYTHE.get());
 
                         output.accept(ModItems.FIRE_WAND.get());
+
+                        output.accept(ModItems.BATTLE_HAMMER.get());
                     }).build());
 
     public static void register(IEventBus modEventBus) {

@@ -2,7 +2,6 @@ package com.aurora4123.randomStoneDropMod.items.combatItems;
 
 import com.aurora4123.randomStoneDropMod.Tiers.ScytheTiers;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.phys.Vec3;

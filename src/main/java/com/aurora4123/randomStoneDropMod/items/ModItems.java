@@ -1,6 +1,7 @@
 package com.aurora4123.randomStoneDropMod.items;
 
 import com.aurora4123.randomStoneDropMod.RandomStoneDropMod;
+import com.aurora4123.randomStoneDropMod.Tiers.HammerTier;
 import com.aurora4123.randomStoneDropMod.Tiers.ScytheTiers;
 import com.aurora4123.randomStoneDropMod.items.combatItems.FireWandItem;
 import com.aurora4123.randomStoneDropMod.items.combatItems.ScytheItem;
@@ -51,6 +52,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DIAMOND_SCYTHE = ITEMS.register("diamond_scythe",
             () -> new ScytheItem(ScytheTiers.DIAMOND,6, -1.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> BATTLE_HAMMER = ITEMS.register("battle_hammer",
+            () -> new HammerItem(HammerTier.IRON, 5, -2.5f, new Item.Properties()));
 
 //----------functional items----------
     public static final RegistryObject<Item> SPAWNPOINT_SETTER = ITEMS.register("spawnpoint_setter",
