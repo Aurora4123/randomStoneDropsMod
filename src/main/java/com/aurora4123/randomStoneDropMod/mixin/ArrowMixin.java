@@ -20,11 +20,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(AbstractArrow.class)
 public abstract class ArrowMixin {
-    @Inject(method = "onHitEntity", at = @At("TAIL"))
+
+    @Inject(method = "onHitEntity", at = @At("TAIL"))//_5790_
     public void onHitEntity(EntityHitResult pResult, CallbackInfo ci) {
         randomStoneDropMod$summonLightningBolt(pResult.getLocation());
     }
-    @Inject(method = "onHitBlock",at = @At("TAIL"))
+    @Inject(method = "onHitBlock",at = @At("TAIL"))//_8060_
     public void onHitBlock(BlockHitResult pResult, CallbackInfo ci){
         randomStoneDropMod$summonLightningBolt(pResult.getLocation());
     }
