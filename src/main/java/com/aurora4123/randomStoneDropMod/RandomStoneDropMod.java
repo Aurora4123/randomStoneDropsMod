@@ -22,51 +22,11 @@ import java.util.List;
 public class RandomStoneDropMod
 {
     public static final String MODID = "randomstonedropmod";
-    private static final List<Item> DROPS = List.of(
-            Items.COAL,
-            Items.RAW_IRON,
-            Items.RAW_COPPER,
-            Items.RAW_GOLD,
-            Items.DIAMOND,
-            Items.EMERALD,
-            Items.LAPIS_LAZULI,
-            Items.REDSTONE
-    );
-   private static final double DROP_CHANCE = 0.1;
-   public RandomStoneDropMod(){
-       IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+   public RandomStoneDropMod(FMLJavaModLoadingContext context) {
+       IEventBus bus = context.getModEventBus();
        ModBlocks.BLOCKS.register(bus);
        ModItems.register(bus);
-
-       MinecraftForge.EVENT_BUS.addListener(this::onBlockBreak);
-       bus.addListener(this::addCreative);
-   }
-   private void onBlockBreak(BlockEvent.BreakEvent event){
-       Player player = event.getPlayer();
-       BlockState state = event.getState();
-
-       if(!player.level().isClientSide && state.is(BlockTags.STONE_ORE_REPLACEABLES)){
-
-           if(player.level().getRandom().nextDouble() < DROP_CHANCE){
-               Item drop = DROPS.get(player.level().random.nextInt(DROPS.size()));
-               player.level().addFreshEntity(
-                       new ItemEntity(
-                               player.level(),
-                               event.getPos().getX() + 0.5,
-                               event.getPos().getY() + 0.5,
-                               event.getPos().getZ() + 0.5,
-                               new ItemStack(drop)
-                       ));
-           }
-       }
    }
 
-   private void addCreative(BuildCreativeModeTabContentsEvent event){
-       if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-           event.accept(ModItems.TEST);
-       }
-       if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-           event.accept(ModItems.THE_BI_STINKY);
-       }
-   }
 }
