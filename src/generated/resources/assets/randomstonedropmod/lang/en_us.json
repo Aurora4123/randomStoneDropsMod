@@ -13,6 +13,7 @@
     "item.randomstonedropmod.iron_scythe": "Iron Scythe",
     "item.randomstonedropmod.gold_scythe": "Gold Scythe",
     "item.randomstonedropmod.diamond_scythe": "Diamond Scythe",
+    "item.randomstonedropmod.copper_scythe" : "Copper Scythe",
     "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
     "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
     "creativetab.randomstonedropmod_combat_tab": "randomStoneDrops-COMBAT",
