@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result": {
+    "item": "randomstonedropmod:diamond_long_sword"
+  },
+  "show_notification": true
+}

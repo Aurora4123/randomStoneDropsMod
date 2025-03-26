@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "randomstonedropmod:test_block",
+    "randomstonedropmod:andesite_waystone"
+  ]
+}

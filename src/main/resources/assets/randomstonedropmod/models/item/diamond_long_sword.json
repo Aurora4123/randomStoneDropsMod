@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "randomstonedropmod:item/diamond_long_sword"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "item.randomstonedropmod.way_stone": "指路石",
+    "item.randomstonedropmod.netherite_long_sword": "下界合金长剑",
+    "item.randomstonedropmod.diamond_long_sword": "钻石长剑",
+    "item.randomstonedropmod.iron_long_sword": "铁长剑",
+    "item.randomstonedropmod.stone_long_sword": "石长剑",
+    "item.randomstonedropmod.wooden_long_sword": "木长剑",
+    "item.randomstonedropmod.golden_long_sword": "金长剑",
+    "item.randomstonedropmod.fire_wand": "火焰法杖",
+    "item.randomstonedropmod.battle_hammer": "战锤",
+    "creativetab.randomstonedropmod_tab": "石头的矿物随机掉落-物品",
+    "creativetab.randomstonedropmod_blocks_tab": "石头的矿物随机掉落-方块",
+    "creativetab.randomstonedropmod_combat_tab": "石头的矿物随机掉落-战斗用品",
+    "creativetab.main_mod_tab": "石头的矿物随机掉落",
+    "block.randomstonedropmod.test_block": "测试用方块（无其他用途）",
+    "block.randomstonedropmod.andesite_waystone": "安山岩指路石方块",
+    "item.randomstonedropmod.spawnpoint_setter": "重生点设置器",
+    "tooltip.spawnpoint_setter" : "点击地板以设置重生点，点击方块侧面可能会无效",
+    "tooltip.fire_wand": "请勿在木屋中使用，除非你知道自己在做什么",
+    "item.randomstonedropmod.copper_scythe": "铜镰刀",
+    "item.randomstonedropmod.iron_scythe": "铁镰刀",
+    "item.randomstonedropmod.gold_scythe": "金镰刀",
+    "item.randomstonedropmod.diamond_scythe": "钻石镰刀"
+
+}

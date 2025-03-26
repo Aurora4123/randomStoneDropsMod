@@ -1,0 +1,26 @@
+{
+
+    "item.randomstonedropmod.way_stone": "Way stone",
+    "item.randomstonedropmod.netherite_long_sword": "Netherite Long Sword",
+    "item.randomstonedropmod.diamond_long_sword": "Diamond long sword",
+    "item.randomstonedropmod.iron_long_sword": "Iron long sword",
+    "item.randomstonedropmod.stone_long_sword": "Stone long sword",
+    "item.randomstonedropmod.wooden_long_sword": "Wooden Long Sword",
+    "item.randomstonedropmod.golden_long_sword": "Golden Long Sword",
+    "item.randomstonedropmod.spawnpoint_setter": "Spawnpoint Setter",
+    "item.randomstonedropmod.fire_wand": "Fire Wand",
+    "item.randomstonedropmod.cooper_scythe": "Cooper Scythe",
+    "item.randomstonedropmod.iron_scythe": "Iron Scythe",
+    "item.randomstonedropmod.gold_scythe": "Gold Scythe",
+    "item.randomstonedropmod.diamond_scythe": "Diamond Scythe",
+    "item.randomstonedropmod.copper_scythe" : "Copper Scythe",
+    "item.randomstonedropmod.battle_hammer": "Battle Hammer",
+    "creativetab.randomstonedropmod_tab": "randomStoneDrops_Items",
+    "creativetab.randomstonedropmod_blocks_tab": "randomStoneDrops_Blocks",
+    "creativetab.randomstonedropmod_combat_tab": "randomStoneDrops-COMBAT",
+    "creativetab.main_mod_tab": "random Stone Drops",
+    "block.randomstonedropmod.test_block": "Test Block",
+    "block.randomstonedropmod.andesite_waystone": "Andesite WayStone",
+    "tooltip.spawnpoint_setter": "Click the ground to set the SpawnPoint",
+    "tooltip.fire_wand": "DO NOT USE in your wooden house unless you're clear about what R U DOING"
+}
