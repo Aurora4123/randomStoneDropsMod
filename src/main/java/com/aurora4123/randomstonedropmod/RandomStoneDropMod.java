@@ -1,5 +1,6 @@
 package com.aurora4123.randomstonedropmod;
 
+import com.aurora4123.randomstonedropmod.blocks.basic.ModBlocks;
 import com.aurora4123.randomstonedropmod.item.basic.ModItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -15,6 +16,7 @@ public class RandomStoneDropMod
     public RandomStoneDropMod(FMLJavaModLoadingContext context) {
         IEventBus bus = context.getModEventBus();
         ModItems.register(bus);
+        ModBlocks.BLOCKS.register(bus);
     }
 
 

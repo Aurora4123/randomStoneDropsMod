@@ -8,10 +8,7 @@ import com.aurora4123.randomstonedropmod.item.advanced.ScytheItem;
 import com.aurora4123.randomstonedropmod.item.advanced.SetSpawnItem;
 import com.aurora4123.randomstonedropmod.tiers.HammerTier;
 import com.aurora4123.randomstonedropmod.tiers.ScytheTiers;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -63,6 +60,8 @@ public class ModItems {
     public static final RegistryObject<Item> BATTLE_HAMMER = ITEMS.register("battle_hammer",
             () -> new HammerItem(HammerTier.IRON, 5, -2.5f, new Item.Properties().tab(CreativeTabHandler.MAIN_TAB)));
     //------end-of items-------
+    //-------blocks-------
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
