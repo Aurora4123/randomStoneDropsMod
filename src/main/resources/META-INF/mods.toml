@@ -16,7 +16,11 @@ displayName="${mod_name}" #mandatory
 
 authors="${mod_authors}" #optional
 
-description='''${mod_description}'''
+description='''A mod make stone random drops with some common items added
+refrenced texture and model resources(Updating irregularly):
+Modern Waystones Textures - Minecraft Resource Pack : https://modrinth.com/resourcepack/modern-waystones-textures
+Waystones Resprite - Minecraft Resource Pack: https://modrinth.com/resourcepack/waystones-resprite
+Faithful 32x Daggers - Minecraft Resource Pack : https://modrinth.com/resourcepack/faithful-32x-daggers'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.randomstonedropmod]] #optional
 # the modid of the dependency
