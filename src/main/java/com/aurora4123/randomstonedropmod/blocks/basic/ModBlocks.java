@@ -21,10 +21,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, RandomStoneDropMod.MODID);
 
     public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)), CreativeModeTab.TAB_DECORATIONS);
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> ANDESIDE_WAYSTONE = registerBlock("andesite_waystone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.STONE)), CreativeModeTab.TAB_DECORATIONS);
 
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
